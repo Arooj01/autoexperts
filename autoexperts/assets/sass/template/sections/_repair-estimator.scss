@@ -1,0 +1,30 @@
+.repair-estimator-wrap {
+  position: relative;
+
+  .estimator-title-area {
+    padding-bottom: 20px;
+
+    .title {
+      color: $titleColor;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      font-size: 40px;
+    }
+
+    .text {
+      font-size: 20px;
+      color: $titleColor;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+  }
+
+  form.estimator-form {
+    margin-left: 45px;
+  }
+
+
+
+
+}

@@ -1,0 +1,62 @@
+// Gallery Layout 1
+.gallery-layout1 {
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      @include equal-size(100%);
+      opacity: 0.60;
+      z-index: 1;
+      background-color: $primary-color;
+      transition-delay: 0s;
+      transform-origin: right top;
+      @include transition(transform linear 0.3s);
+      @include transform(scale(0, 1));
+    }
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: inline-block;
+      @include equal-size-lineHeight(80px);
+      z-index: 2;
+      background-color: $white-color;
+      text-align: center;
+      font-size: 39px;
+      margin-left: -40px;
+      margin-top: -40px;
+      @include border-radius(50%);
+      @include transform(scale(0));
+      @include transition(transform 0.3s);
+    }
+
+    &:hover {
+      &:before {
+        transform: scale(1, 1);
+        transform-origin: left top;
+      }
+
+      a {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0.45s;
+        @include transform(scale(1));
+      }
+
+
+    }
+  }
+
+
+}

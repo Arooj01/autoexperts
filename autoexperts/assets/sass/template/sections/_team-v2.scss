@@ -1,0 +1,236 @@
+// Our Team Layout 2
+.team-layout2 {
+  padding: 0 180px;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    max-width: 900px;
+    max-height: 615px;
+    bottom: -175px;
+    left: 0;
+    background-image: url('../img/team-member/bg-shape-2-2.png');
+  }
+
+
+
+  .background-image {
+    height: 495px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+
+  .section-title2 {
+
+    .text,
+    .title {
+      color: #fff;
+
+      &:before {
+        color: #fff;
+      }
+    }
+  }
+
+
+  .container-fluid {
+    position: relative;
+    z-index: 4;
+  }
+
+
+
+  .team-member {
+    position: relative;
+
+    .member-img {
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        @include transform(scale(1.001));
+        @include transition(all ease 0.4s);
+      }
+    }
+
+    .member-content {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+      padding-bottom: 45px;
+      padding-top: 20px;
+      z-index: 1;
+
+      &:after,
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 146%;
+        z-index: -1;
+        @include transition(all ease 0.4s);
+      }
+
+      &:before {
+        opacity: 0;
+        height: 0;
+        visibility: hidden;
+        background: rgb(239, 15, 58);
+        background: linear-gradient(0deg, rgba(239, 15, 58, 0.927608543417367) 13%, rgba(239, 15, 58, 0.8491771708683473) 26%, rgba(239, 15, 58, 0.7399334733893557) 39%, rgba(239, 15, 58, 0.6558998599439776) 50%, rgba(239, 15, 58, 0.46262254901960786) 63%, rgba(239, 15, 58, 0.17970938375350143) 80%, rgba(239, 15, 58, 0.15449929971988796) 85%, rgba(239, 15, 58, 0.08167016806722693) 90%, rgba(239, 15, 58, 0.06206232492997199) 95%, rgba(239, 15, 58, 0) 100%);
+      }
+
+
+      &:after {
+        opacity: 0.65;
+        visibility: visible;
+        background: rgb(7, 11, 40);
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.927608543417367) 13%, rgba(0, 0, 0, 0.8491771708683473) 26%, rgba(0, 0, 0, 0.7399334733893557) 39%, rgba(0, 0, 0, 0.6558998599439776) 50%, rgba(0, 0, 0, 0.46262254901960786) 63%, rgba(0, 0, 0, 0.17970938375350143) 80%, rgba(0, 0, 0, 0.15449929971988796) 85%, rgba(0, 0, 0, 0.08167016806722693) 90%, rgba(0, 0, 0, 0.06206232492997199) 95%, rgba(0, 0, 0, 0) 100%);
+
+      }
+
+
+
+      a.btn-overly {
+        background-color: $primary-color2;
+        position: absolute;
+        left: calc(50% - 25px);
+        top: 20px;
+        @include equal-size-lineHeight(45px);
+        opacity: 1;
+        visibility: visible;
+
+        .ripple {
+          background-color: $primary-color2;
+        }
+      }
+
+      ul.social-links {
+        padding-bottom: 35px;
+        position: relative;
+        top: -40px;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all ease 0.4s);
+
+        li {
+          display: inline-block;
+          margin: 0 3px;
+
+          a {
+            @include equal-size-lineHeight(45px);
+            display: inline-block;
+            text-align: center;
+            background-color: $white-color;
+            color: $primary-color2;
+            @include border-radius(50%);
+
+            &:hover {
+              @include border-radius(7px);
+            }
+          }
+
+
+        }
+      }
+
+
+      .member-text {
+
+        .degi {
+          color: $white-color;
+          font-size: 14px;
+          display: inline-block;
+          margin-bottom: 7px;
+        }
+
+        .name {
+          font-size: 22px;
+          color: $white-color;
+          margin-bottom: 0;
+
+          &:hover {
+            a {
+              color: $white-color;
+            }
+          }
+        }
+
+      }
+
+    }
+
+    &:hover {
+
+      .member-img {
+        img {
+          @include transform(scale(1.05));
+        }
+      }
+
+      .member-content {
+        a.btn-overly {
+          opacity: 0;
+          visibility: hidden;
+          top: 40px;
+        }
+
+        ul.social-links {
+          top: 0;
+          visibility: visible;
+          opacity: 1;
+        }
+
+        &:before {
+          opacity: 0.9;
+          visibility: visible;
+          height: 146%;
+        }
+
+        &:after {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+
+    }
+
+
+  }
+
+
+  .slick-arrow {
+    top: calc(50% - 25px);
+    left: -95px;
+
+    &.slick-next {
+      left: auto;
+      right: -95px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+}

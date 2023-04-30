@@ -1,0 +1,79 @@
+// Blog Layout 1
+.blog-layout1 {
+
+  .blog {
+    margin-bottom: 30px;
+
+    .blog-img {
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        @include transition(all ease 0.4s);
+        @include transform(scale(1.001));
+      }
+    }
+
+    .blog-content {
+      background-color: $white-color;
+      box-shadow: 0px 10px 47.5px 2.5px rgba(0, 0, 0, 0.07);
+      margin: 0 30px;
+      padding: 35px 40px 0 40px;
+      position: relative;
+      margin-top: -50px;
+
+
+      h3.blog-title {
+        font-size: 22px;
+        line-height: 32px;
+        text-transform: none;
+        margin-bottom: 12px;
+      }
+
+      p.blog-text {
+        margin-bottom: 25px;
+        padding-right: 10px;
+      }
+
+
+      .blog-meta {
+        position: relative;
+        padding: 16px 0;
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: -41px;
+          right: -41px;
+          top: 0;
+          height: 1px;
+          background-color: #edf2f4;
+        }
+
+        span {
+          font-size: 14px;
+          display: inline-block;
+          margin-right: 30px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          i {
+            color: $primary-color;
+            margin-right: 10px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .blog-img {
+        img {
+          @include transform(scale(1.04));
+        }
+      }
+    }
+  }
+}

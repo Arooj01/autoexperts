@@ -1,0 +1,215 @@
+.work-process-layout4 {
+  .process-img {
+    @include equal-size(300px);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .process-icon {
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+
+    .icon-text {
+      display: inline-block;
+      @include equal-size(70px);
+      text-align: center;
+      line-height: 70px;
+      background-color: $primary-color;
+      font-size: 18px;
+      font-weight: 700;
+      color: #ffffff;
+      border-radius: 50%;
+    }
+  }
+
+  .process-title {
+    letter-spacing: 0;
+  }
+
+  .process-head {
+    position: relative;
+    margin-right: 30px;
+  }
+
+  .work-process {
+    position: relative;
+
+    .line-shape {
+      position: absolute;
+    }
+
+    &:nth-child(2n) {
+      .process-icon {
+
+        .ripple,
+        .icon-text {
+          background-color: $primary-color2;
+        }
+      }
+    }
+    @media (min-width: $xl) {
+      width: 100%;
+      max-width: 585px;
+
+      
+
+      &:nth-child(1) {
+        margin-top: 110px;
+        margin-bottom: 80px;
+
+        .line-shape {
+          left: 260px;
+          top: 10px;
+        }
+      }
+
+      &:nth-child(2) {
+        .line-shape {
+          left: 290px;
+          bottom: 30px;
+        }
+      }
+
+
+      &:nth-child(3) {
+        flex-direction: row-reverse;
+        text-align: right;
+        margin-left: auto;
+
+        .process-icon {
+          left: auto;
+          right: 20px;
+        }
+
+        .line-shape {
+          right: 280px;
+          top: 10px;
+        }
+
+        .process-head {
+          margin-right: 0;
+          margin-left: 30px;
+        }
+      }
+
+      &:nth-child(4) {
+        text-align: right;
+        flex-direction: row-reverse;
+        margin-top: -110px;
+        margin-left: auto;
+
+        .process-icon {
+          left: auto;
+          right: 20px;
+        }
+
+        .line-shape {
+          right: 260px;
+          bottom: 10px;
+        }
+
+        .process-head {
+          margin-right: 0;
+          margin-left: 30px;
+        }
+
+      }
+    }
+
+
+  }
+
+
+  .process-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+
+
+}
+
+
+@include xl {
+  .work-process-layout4 {
+    .process-area {
+      grid-row-gap: 40px;
+    }
+
+    .process-head {
+      margin-right: 20px;
+    }
+
+    .line-shape {
+      display: none;
+    }
+
+    .process-img {
+      width: 190px;
+      height: 190px;
+    }
+
+
+    .process-icon {
+      left: 0;
+      
+      .icon-text {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 14px;
+      }
+    }
+
+
+  }
+}
+
+
+
+@include md {
+  .work-process-layout4 {
+    .work-process {
+      text-align: center;
+    }
+
+    .process-title {
+      margin-bottom: 5px;
+      font-size: 20px;
+    }
+
+    .process-img {
+      width: 160px;
+      height: 160px;
+    }
+
+    .process-head {
+      display: inline-block;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+
+@include sm {
+  .work-process-layout4 {
+    .process-area {
+      display: block;
+    }
+
+    .work-process {
+      margin-bottom: 30px;
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

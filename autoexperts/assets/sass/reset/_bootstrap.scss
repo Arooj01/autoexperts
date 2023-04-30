@@ -1,0 +1,460 @@
+/*------------------- 4.1 Grid -------------------*/
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@media (min-width: 1200px) {
+  .no-gutters-lg {
+    margin-right: 0;
+    margin-left: 0;
+
+    >.col,
+    >[class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.row.no-gutters .slick-track>[class^="col-"],
+.row.no-gutters .slick-track>[class*=" col-"],
+.row.no-gutters>[class^="col-"],
+.row.no-gutters>[class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.row.gutters-1 {
+  padding-left: 14.5px;
+  padding-right: 14.5px;
+
+  >[class^="col-"] {
+    padding-left: 0.5px;
+    padding-right: 0.5px;
+  }
+}
+
+.row.gutters-2 {
+  padding-left: 14px;
+  padding-right: 14px;
+
+  >[class^="col-"] {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+}
+
+.row.gutters-3 {
+  padding-left: 13.5px;
+  padding-right: 13.5px;
+
+  >[class^="col-"] {
+    padding-left: 1.5px;
+    padding-right: 1.5px;
+  }
+}
+
+.row.gutters-4 {
+  padding-left: 13px;
+  padding-right: 13px;
+
+  >[class^="col-"] {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
+.row.gutters-5 {
+  padding-left: 12.5px;
+  padding-right: 12.5px;
+
+  >[class^="col-"] {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+  }
+}
+
+.row.gutters-6 {
+  padding-left: 12px;
+  padding-right: 12px;
+
+  >[class^="col-"] {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}
+
+.row.gutters-7 {
+  padding-left: 11.5px;
+  padding-right: 11.5px;
+
+  >[class^="col-"] {
+    padding-left: 3.5px;
+    padding-right: 3.5px;
+  }
+}
+
+.row.gutters-8 {
+  padding-left: 11px;
+  padding-right: 11px;
+
+  >[class^="col-"] {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
+.row.gutters-9 {
+  padding-left: 10.5px;
+  padding-right: 10.5px;
+
+  >[class^="col-"] {
+    padding-left: 4.5px;
+    padding-right: 4.5px;
+  }
+}
+
+.row.gutters-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  >[class^="col-"] {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.row.gutters-11 {
+  padding-left: 9.5px;
+  padding-right: 9.5px;
+
+  >[class^="col-"] {
+    padding-left: 5.5px;
+    padding-right: 5.5px;
+  }
+}
+
+.row.gutters-12 {
+  padding-left: 9px;
+  padding-right: 9px;
+
+  >[class^="col-"] {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+.row.gutters-13 {
+  padding-left: 8.5px;
+  padding-right: 8.5px;
+
+  >[class^="col-"] {
+    padding-left: 6.5px;
+    padding-right: 6.5px;
+  }
+}
+
+.row.gutters-14 {
+  padding-left: 8px;
+  padding-right: 8px;
+
+  >[class^="col-"] {
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+}
+
+.row.gutters-15 {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+
+  >[class^="col-"] {
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+  }
+}
+
+.row.gutters-20 {
+  padding-left: 5px;
+  padding-right: 5px;
+
+  >[class^="col-"] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.row.gutters-40 {
+  margin-left: -20px;
+  margin-right: -20px;
+
+  >[class^="col-"] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media only screen and (max-width: 575px) {
+    margin-left: 0;
+    margin-right: 0;
+
+    >[class^="col-"] {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+.row.gutters-50 {
+  margin-left: -25px;
+  margin-right: -25px;
+
+  >[class^="col-"] {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  @media only screen and (max-width: 1199px) {
+    margin-left: -15px;
+    margin-right: -15px;
+
+    >[class^="col-"] {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    margin-left: 0;
+    margin-right: 0;
+
+    >[class^="col-"] {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+
+/*------------------- 4.2 Form -------------------*/
+.form-group {
+  position: relative;
+
+  label {
+    font-size: $bfSize;
+    font-weight: $fontWeight;
+    color: $bColor;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+  }
+
+  .form-control {
+    font-size: $bfSize;
+    color: $bColor;
+    padding: 10px 20px;
+    padding-right: 50px;
+    border: none;
+    background-color: $white-color;
+    border: 1px solid #e2e2e2;
+    @include border-radius(0);
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  input {
+    height: 60px;
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  textarea.form-control {
+    padding-top: 15px;
+    min-height: 200px;
+  }
+
+  input.form-control,
+  textarea.form-control {
+
+    @include inputPlaceholder {
+      color: $bColor;
+    }
+  }
+
+  i {
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    font-size: 16px;
+  }
+
+
+  input[type="checkbox"] {
+    visibility: hidden;
+    opacity: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    display: none;
+
+    &:checked {
+      ~label {
+        color: $primary-color;
+
+        &:before {
+          content: "\f00c";
+          color: $primary-color;
+          border-color: $primary-color;
+        }
+      }
+    }
+
+    ~label {
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+      display: block;
+
+      &:before {
+        content: '';
+        font-family: $iconFont2;
+        font-weight: 700;
+        position: absolute;
+        left: 0;
+        top: 2px;
+        border: 1px solid #dddddd;
+        height: 18px;
+        width: 18px;
+        line-height: 18px;
+        text-align: center;
+        font-size: 12px;
+      }
+    }
+  }
+
+
+  input[type="radio"] {
+    visibility: hidden;
+    opacity: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 0;
+    display: none;
+
+
+    ~label {
+      position: relative;
+      padding-left: 28px;
+      cursor: pointer;
+      line-height: 20px;
+      display: inline-block;
+      font-weight: 600;
+      color: $titleColor;
+      margin-bottom: 0;
+
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 18px;
+        height: 18px;
+        border: 1px solid #ddd;
+        border-radius: 100%;
+        background: #fff;
+        transition: all 0.2s ease;
+      }
+
+      &:after {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: $primary-color;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        border-radius: 100%;
+        transition: all 0.2s ease;
+        opacity: 0;
+        transform: scale(0);
+      }
+    }
+
+    &:checked {
+      ~label {
+        &:before {
+          border-color: $primary-color;
+        }
+
+        &:after {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+
+  }
+
+
+
+
+}
+
+.form-control:focus {
+  box-shadow: none;
+}
+
+
+
+.gutters-20 {
+  .form-group {
+    margin-bottom: 20px;
+  }
+}
+
+.gutters-10 {
+  .form-group {
+    margin-bottom: 10px;
+  }
+}
+
+.white-input {
+  .form-control {
+    border: none;
+  }
+}
+
+.form-control.is-invalid {
+  background-position: calc(100% - 10px) calc(.4em + .5rem);
+}
+
+
+.form-messages {
+  display: none;
+  margin-top: 20px;
+
+  &.error {
+    color: #dc3545;
+    display: block;
+  }
+
+  &.success {
+    color: #28a745;
+    display: block;
+  }
+}

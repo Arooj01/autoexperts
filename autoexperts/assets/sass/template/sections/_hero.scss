@@ -1,0 +1,212 @@
+.hero-sec-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+// Hero Slider Layout 2
+.hero-layout2 {
+  position: relative;
+  z-index: 1;
+  padding-top: 50px;
+
+
+  .small-title {
+    position: relative;
+    font-style: italic;
+    font-weight: 700;
+    color: $white-color;
+    text-transform: uppercase;
+    font-family: $bodyFont;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -40%;
+      top: 50%;
+      margin-top: -1px;
+      height: 2px;
+      width: 35.2%;
+      background-color: $white-color
+    }
+  }
+
+  .big-title {
+    text-transform: uppercase;
+    color: $white-color;
+  }
+
+
+
+  .ls-bottom-nav-wrapper {
+    position: absolute;
+    right: 85px;
+    top: 0 !important;
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+
+
+    .ls-bottom-slidebuttons a {
+      display: block !important;
+      width: 100% !important;
+      width: 10px !important;
+      height: 10px !important;
+      border-radius: 50% !important;
+      border: 2px solid $white-color !important;
+      background-color: transparent;
+      margin: 20px auto !important;
+      opacity: 1 !important;
+      position: relative;
+      z-index: 1;
+      @include transition(all ease 0.4s);
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 10px;
+        height: 10px;
+        margin: -5px 0 0 -5px;
+        background-color: $primary-color2;
+        z-index: -1;
+        @include border-radius(50%);
+        opacity: 0;
+      }
+
+      &:hover {
+        background-color: $primary-color2;
+      }
+
+      &.ls-nav-active {
+        background-color: transparent !important;
+        width: 25px !important;
+        height: 25px !important;
+
+        &:before {
+          opacity: 1;
+        }
+
+        &:hover {
+          background-color: transparent !important;
+        }
+      }
+
+
+
+
+    }
+
+
+
+  }
+
+
+
+  .phone-box {
+    position: absolute;
+    bottom: 210px;
+    right: 0;
+    z-index: 99;
+  }
+
+
+}
+
+
+
+// Hero Slider Layout 3
+.hero-layout3 {
+
+
+  .small-title {
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    color: $white-color;
+    letter-spacing: 0.20px;
+    position: relative;
+    text-align: center;
+
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      width: 28.1%;
+      height: 2px;
+      background-color: $white-color;
+      left: -31%;
+      top: 50%;
+      margin-top: -1px;
+    }
+
+    &:after {
+      left: auto;
+      right: -33.1%;
+    }
+  }
+
+  .big-title {
+    color: $white-color;
+    text-transform: uppercase;
+    letter-spacing: 0.20px;
+    text-align: center;
+  }
+
+  .ls-v6 .ls-nav-prev,
+  .ls-v6 .ls-nav-next {
+    top: 60%;
+  }
+
+
+
+  @media (min-width: 1400px) {
+
+    .ls-v6 .ls-nav-prev,
+    .ls-v6 .ls-nav-next {
+      @include equal-size(70px);
+      top: 64%;
+      border: 2px solid #4a4c58 !important;
+      text-align: center;
+      line-height: 70px;
+      left: 100px;
+      @include border-radius(50%);
+
+      &:after {
+        margin-top: -9px;
+        width: 18px;
+        height: 18px;
+        margin-left: 9px;
+        border-top-color: #4a4c58;
+        border-left-color: #4a4c58;
+      }
+
+      &:hover {
+        border-color: transparent !important;
+        background-color: $primary-color;
+        @include transform(scaleX(1) scaleY(1));
+      }
+
+
+    }
+
+    .ls-v6 .ls-nav-next {
+      left: auto;
+      right: 100px;
+
+      &:after {
+        border-left-color: transparent;
+        border-right-color: #4a4c58;
+        margin-left: 0;
+        margin-right: 9px;
+      }
+    }
+  }
+
+
+
+
+
+
+
+}

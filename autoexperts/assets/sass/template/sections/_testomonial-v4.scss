@@ -1,0 +1,132 @@
+// Testomonial Layout 4
+.testomonial-layout4 {
+  position: relative;
+
+  &:before {
+    content: '';
+    @include overlay(0.79, 0);
+    background-color: #040d20;
+  }
+
+  .single-testomonial {
+    padding-left: 50px;
+
+    .testo-author {
+      max-width: 320px;
+      width: 100%;
+      text-align: center;
+      background-color: $primary-color;
+      background-image: url('../img/testomonial/author-bg.jpg');
+      background-size: 100% 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      padding-top: 60px;
+      padding-bottom: 55px;
+      position: relative;
+      z-index: 9;
+      @include transform(translateX(-2000px));
+      @include transition(all ease 1s);
+
+      img {
+        @include equal-size(150px);
+        background-color: $white-color;
+        padding: 8px;
+        margin-bottom: 30px;
+        @include border-radius(50%);
+      }
+
+      .name {
+        color: $white-color;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      span {
+        color: $white-color;
+      }
+
+    }
+
+
+    .testomonial-content {
+      position: relative;
+      z-index: 1;
+      padding-left: 75px;
+      width: calc(100% - 320px);
+      height: min-content;
+      padding-right: 50px;
+
+      &:after {
+        content: '\f10e';
+        position: absolute;
+        font-family: $iconFont2;
+        right: 0;
+        bottom: 5px;
+        font-size: 76px;
+        font-weight: 300;
+        color: $white-color;
+        opacity: 0.10;
+      }
+
+      .quote {
+        font-size: 48px;
+        color: $white-color;
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+
+      .text {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 20px;
+        font-style: italic;
+        color: $white-color;
+        font-weight: 500;
+      }
+
+      .rating {
+        i {
+          color: #ffd200;
+          display: inline-block;
+          font-size: 22px;
+          margin-right: 5px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+
+    }
+
+  }
+
+
+  .slick-current {
+    .single-testomonial {
+
+      .testo-author {
+        @include transform(translateX(0));
+      }
+
+      .testomonial-content {
+
+        .quote,
+        .rating,
+        .text {
+          animation-name: fadeIn;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: both;
+          animation-duration: 1s;
+          animation-delay: 0.3s;
+        }
+      }
+
+    }
+  }
+
+
+}

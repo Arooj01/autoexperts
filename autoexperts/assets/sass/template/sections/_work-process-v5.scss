@@ -1,0 +1,162 @@
+.work-process-layout5 { 
+
+
+  .process-number {
+    @include equal-size(50px);
+    display: inline-block;
+    background-color: $white-color;
+    text-align: center;
+    line-height: 50px;
+    color: $titleColor;
+    font-weight: 700;
+    border-radius: 50%;
+    box-shadow: 0px 16px 30.4px 1.6px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: -60px;
+    top: 50%;
+    margin-top: -25px;
+  }
+
+  .process-body {
+    position: relative;
+    z-index: 3;
+    padding:0  30px;
+  }
+
+  .work-process {
+    position: relative;
+    margin-bottom: -0.5px;
+
+    [class*="col-"] {
+      position: static;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 65%;
+      background-color: inherit;
+      clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 15% 50%, 0% 0%);
+      z-index: 1;
+      background-color: $primary-color;
+    }
+  }
+
+
+  .row >div{
+    
+    &:nth-child(1) {
+      .work-process,
+      .work-process:before {
+        background-color: $primary-color;
+      }
+    }
+
+    &:nth-child(2) {
+      .work-process,
+      .work-process:before {
+        background-color: $primary-color2;
+      }
+    }
+
+    &:nth-child(3) {
+      .work-process,
+      .work-process:before {
+        background-color: #37466a;
+      }
+    }
+
+    &:nth-child(4) {
+      .work-process,
+      .work-process:before {
+        background-color: $titleColor;
+      }
+    }
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      .work-process {
+        
+        &:before {
+          transform: rotateY(180deg);
+          right: auto;
+          left: 0;
+        }
+      }
+
+      .row {
+        flex-direction: row-reverse;
+      }
+      
+      .process-body {
+        text-align: right;
+      }
+      .process-number {
+        left: auto;
+        right: -60px;
+      }
+    }    
+  }  
+}
+
+
+
+@include xl {
+  .work-process-layout5 {
+    .process-body {
+      padding: 0 20px;
+    }
+  }
+}
+
+
+@include lg {
+  .work-process-layout5 {
+    .work-process {
+      margin-bottom: 30px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .process-body {
+      padding: 30px 30px;
+    }
+    
+    .process-number {
+      left: auto;
+      right: 20px;
+      top: 0;
+    }
+    
+    .row>div{
+      &:nth-child(3),
+      &:nth-child(4) {
+        .process-body {
+          text-align: left;
+        }
+
+        .process-number {
+          left: auto;
+          right: 20px;
+          top: 0;
+        }
+
+        .row {
+          flex-direction: row;
+        }
+      }
+    }
+
+    .row.mb-30 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+

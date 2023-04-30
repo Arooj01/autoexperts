@@ -1,0 +1,177 @@
+.service-details-layout1 {
+
+  &.background-image {
+    position: relative;
+    background-size: cover;
+
+    &:after {
+      content: '';
+      @include overlay(0.85, 0);
+      background-color: $white-color;
+    }
+  }
+
+  .inner-title {
+    letter-spacing: 0.20px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+
+  .mb-25 {
+    margin-bottom: 25px;
+  }
+
+  .mb-30 {
+    margin-bottom: 30px;
+  }
+
+  .widget {
+    border: 1px solid #f0f0f0;
+  }
+
+  .service-details {
+
+    .service-img {
+      margin-bottom: 15px;
+    }
+
+
+    .service-thumb-image {
+      margin-left: -7.5px;
+      margin-right: -7.5px;
+      overflow: hidden;
+      margin-bottom: 35px;
+
+      img {
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+      }
+    }
+
+
+
+    .service-title {
+      font-family: $bodyFont;
+      font-size: 40px;
+      font-weight: 500;
+      letter-spacing: 0.20px;
+      margin-bottom: 15px;
+    }
+
+
+
+    .service-content {
+      border-bottom: 1px solid #ededed;
+      padding-bottom: 9px;
+      margin-bottom: 40px;
+
+      &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+    }
+
+
+    .service-middle-box {
+      .inner-title {
+        letter-spacing: 0.20px;
+        text-transform: none;
+        margin-bottom: 15px;
+      }
+
+      .middle-img {
+        margin-bottom: 25px;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    ul {
+      padding-bottom: 10px;
+
+      li {
+        font-size: 16px;
+        line-height: 28px;
+        padding-left: 25px;
+        position: relative;
+        margin-bottom: 18px;
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 9px;
+          @include equal-size(7px);
+          background-color: $primary-color;
+          @include border-radius(50%);
+        }
+      }
+    }
+
+    .service-video-box {
+      position: relative;
+      margin-bottom: 40px;
+
+      &:before {
+        content: '';
+        @include overlay(0.50, 1);
+        background-color: #01040c;
+      }
+
+
+      .box-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 3;
+        margin-left: 15px;
+        @include transform(translate(-50%, -50%));
+
+        a.text {
+          color: $white-color;
+          font-size: 18px;
+          letter-spacing: 0.20px;
+          font-weight: 500;
+          position: relative;
+          top: -6px;
+          z-index: 4;
+          left: -15px;
+        }
+
+
+      }
+
+
+
+
+    }
+
+
+    .single-faq {
+      background-color: #fff;
+      border-color: #d9ddee;
+      box-shadow: none;
+
+      &.open {
+        border-color: $primary-color;
+      }
+    }
+
+
+
+
+
+
+  }
+
+}

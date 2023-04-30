@@ -1,0 +1,21 @@
+// Subscribe Layout 3
+.subscribe-layout3 {
+  &.background-image {
+    &:before {
+      background-color: #0a1224;
+    }
+  }
+
+  form.subsc-form {
+    padding-top: 0;
+    padding-left: 100px;
+
+    input {
+      background-color: #fff;
+      border: none;
+      width: calc(100% - 248px);
+      margin-right: 0;
+      padding-left: 30px;
+    }
+  }
+}

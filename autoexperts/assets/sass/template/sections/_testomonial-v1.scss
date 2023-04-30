@@ -1,0 +1,195 @@
+// Testomonial Layout 1
+.testomonial-layout1 {
+  background-color: $secondary-color2;
+  background-image: url('../img/testomonial/testomonial-bg-1-1.png');
+  background-size: 100% 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+
+  .slick-arrow {
+    right: -100px;
+    top: calc(50% - 25.5px);
+    width: 50px;
+    height: 52px;
+    box-shadow: 0 0px 38px -11px rgba(0, 0, 0, 0.1);
+    
+    &.slick-prev {
+      z-index: 2;
+      
+      &:after {
+        width: 20px !important;
+        height: 1px;
+        right: calc(50% - 10px);
+        bottom: 1px;
+        top: auto;
+      }
+    }
+    
+    &.slick-next {
+      top: calc(50% + 25.5px);
+      z-index: 1;
+    }
+
+
+  }
+
+
+  .single-testomonial {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    .testo-author {
+      max-width: 320px;
+      width: 100%;
+      text-align: center;
+      background-color: $primary-color;
+      background-image: url('../img/testomonial/author-bg.jpg');
+      background-size: 100% 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      padding-top: 60px;
+      padding-bottom: 55px;
+      position: relative;
+      z-index: 9;
+      @include transform(translateX(-2000px));
+      @include transition(all ease 1s);
+
+      img {
+        @include equal-size(150px);
+        background-color: $white-color;
+        padding: 8px;
+        margin-bottom: 30px;
+        @include border-radius(50%);
+      }
+
+      .name {
+        color: $white-color;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      span {
+        color: $white-color;
+      }
+
+    }
+
+
+    .testomonial-content {
+      position: relative;
+      z-index: 1;
+      padding-left: 60px;
+      width: calc(100% - 320px);
+      padding-top: 65px;
+      padding-bottom: 65px;
+      height: 100%;
+      padding-right: 105px;
+      background-color: $white-color;
+      box-shadow: 0 0px 38px -11px rgba(0, 0, 0, 0.1);
+
+      &:after {
+        content: '\f10e';
+        position: absolute;
+        font-family: $iconFont2;
+        right: 65px;
+        bottom: 20px;
+        font-size: 100px;
+        font-weight: 300;
+        color: $primary-color;
+        opacity: 0.10;
+      }
+
+      .quote {
+        font-size: 48px;
+        color: $primary-color;
+        display: inline-block;
+        margin-bottom: 8px;
+      }
+
+      .text {
+        font-size: 20px;
+        line-height: 32px;
+        margin-bottom: 20px;
+        font-style: italic;
+        font-weight: 500;
+      }
+
+      .rating {
+        i {
+          color: #ffd200;
+          display: inline-block;
+          font-size: 22px;
+          margin-right: 5px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+
+    }
+
+  }
+
+  .counter-area-wrap {
+    padding: 0 60px;
+  }
+
+
+  .slick-current {
+    .single-testomonial {
+
+      .testo-author {
+        @include transform(translateX(0));
+      }
+
+      .testomonial-content {
+
+        .quote,
+        .rating,
+        .text {
+          animation-name: fadeIn;
+          animation-iteration-count: 1;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: both;
+          animation-duration: 1s;
+          animation-delay: 0.3s;
+        }
+      }
+
+    }
+  }
+
+
+}
+
+
+@include md {
+  .testomonial-layout1 {
+    .counter-area-wrap {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .single-testomonial {
+      .testomonial-content {
+        padding: 30px 30px 30px 35px !important;
+        margin-top: 0 !important;
+      }
+
+      .testo-author {
+        max-width: 100% !important;
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+      }
+
+      .testomonial-content::after {
+        right: 15px;
+        bottom: -10px;
+        font-size: 66px;
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+// About Us Layout 3
+.about-wrap-layout3 {
+  background-color: #fafafa;
+
+  .about-us-content {
+    padding-right: 30px;
+
+    h2.about-title {
+      font-size: 48px;
+      text-transform: uppercase;
+      line-height: 60px;
+      font-weight: 600;
+      letter-spacing: 0.40px;
+      margin-bottom: 25px;
+      max-width: 80%;
+      margin-top: -12px;
+    }
+
+    p {
+      color: $bColor2;
+    }
+
+
+    .features-list {
+      padding-top: 5px;
+      margin-bottom: 35px;
+
+      ul {
+        li {
+          position: relative;
+          margin-bottom: 4px;
+          color: $bColor2;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &:before {
+            content: '\f111';
+            position: relative;
+            left: 0;
+            top: -4px;
+            font-size: 18px;
+            font-family: $iconFont2;
+            font-weight: 900;
+            font-size: 5px;
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            text-align: center;
+            box-shadow: inset 0 0 6px -2px $primary-color;
+            line-height: 15px;
+            margin-right: 15px;
+            color: $primary-color;
+            @include border-radius(50%);
+          }
+
+
+        }
+      }
+    }
+
+
+    .counter-box-wrapper {
+      padding-top: 5px;
+      margin-bottom: 35px;
+    }
+
+    .single-counter {
+      max-width: 200px;
+      width: 100%;
+      margin-right: 30px;
+      background-color: $primary-color;
+      padding: 25px 30px;
+      padding-right: 0;
+      position: relative;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      i {
+        position: absolute;
+        right: 28px;
+        top: 25px;
+        color: $white-color;
+        font-size: 67px;
+        opacity: 0.10;
+      }
+
+      .counter {
+        color: $white-color;
+        font-size: 48px;
+        font-weight: 600;
+        font-family: $titleFont;
+        line-height: 1;
+        position: relative;
+
+        &:after {
+          content: '\f067';
+          font-family: $iconFont2;
+          font-weight: 900;
+          font-size: 26px;
+          position: relative;
+          top: -9px;
+          margin-left: 3px;
+        }
+      }
+
+      .text {
+        font-size: 16px;
+        color: $white-color;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 0;
+      }
+
+    }
+
+
+
+
+
+
+
+  }
+
+
+
+
+  form.estimator-form {
+    position: relative;
+    padding: 60px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #070a12;
+      opacity: 0.60;
+    }
+
+
+    h3.form-title {
+      font-size: 32px;
+      color: $white-color;
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: $titleFont;
+      margin-bottom: 12px;
+    }
+
+    p.sub-title {
+      line-height: 22px;
+      color: $white-color;
+      position: relative;
+      margin-bottom: 30px;
+      margin-bottom: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+
+      .select2-container span.select2-selection,
+      input {
+        border: none;
+      }
+
+
+
+    }
+
+
+
+  }
+
+
+
+
+
+
+}

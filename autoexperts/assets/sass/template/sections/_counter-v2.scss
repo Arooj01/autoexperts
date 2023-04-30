@@ -1,0 +1,52 @@
+// Counter Layout 2
+.counter-layout2 {
+  .inner-wrapper {
+    box-shadow: 0 10px 54px -4px rgba(0, 0, 0, 0.1);
+    padding-left: 80px;
+    padding-right: 80px;
+    position: relative;
+    margin-top: -120px;
+    background-color: $white-color;
+  }
+
+  .counter-box {
+    .shape-icon {
+      &:before {
+        background-color: $primary-color2;
+        opacity: 0.10;
+      }
+
+      i {
+        color: $primary-color2;
+      }
+    }
+
+
+    .content {
+      .text {
+        font-weight: 400;
+      }
+    }
+
+
+  }
+
+
+
+
+  &.pt-70 {
+    padding-top: 0;
+
+    .inner-wrapper {
+      padding-top: 70px;
+    }
+  }
+
+  &.pb-70 {
+    padding-bottom: 0;
+
+    .inner-wrapper {
+      padding-bottom: 70px;
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.vs-checkout-area {
+
+  .vs-cart-coupon {
+    label {
+      font-size: 24px;
+      line-height: 1;
+      margin-bottom: 20px;
+      text-transform: none;
+      color: $titleColor;
+      font-weight: 600;
+    }
+  }
+
+
+  .vs-billing-differentAddress {
+    display: none;
+  }
+
+
+  table {
+
+    td+td,
+    th+th {
+      text-align: right;
+    }
+  }
+
+
+  .vs-orderinfo-wrap {
+    background-color: $secondary-color;
+    padding: 30px;
+    padding-top: 10px;
+
+    table.checkout-ordertable {
+
+      td,
+      th {
+        padding: 0;
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+      tr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+
+      thead {
+        th {
+          font-size: 18px;
+        }
+      }
+
+      tfoot {
+        td {
+          font-weight: 700;
+        }
+
+        tr {
+          &:last-child {
+            border-bottom: none;
+
+
+            td {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+
+    .vs-checkout-payment {
+      .form-group {
+        margin-bottom: 10px;
+      }
+    }
+
+    .vs-checkout-submit {
+      .text {
+        margin-bottom: 10px;
+      }
+    }
+
+  }
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+  .vs-checkout-area {
+    .form-title {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+
+    .vs-orderinfo-wrap {
+      padding: 20px;
+      padding-top: 10px;
+    }
+
+    .vs-checkout-payment {
+      font-size: 14px;
+
+      .title {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .vs-orderinfo-wrap {
+      table.checkout-ordertable {
+
+        td,
+        th {
+          padding: 0;
+          padding-bottom: 10px;
+          padding-top: 10px;
+          font-size: 12px;
+        }
+
+        table.checkout-ordertable {
+          thead {
+            th {
+              font-size: 15px;
+            }
+          }
+        }
+
+
+        tfoot {
+          tr {
+            &:last-child {
+              td {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

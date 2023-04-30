@@ -1,0 +1,144 @@
+.team-layout7 {
+  
+  .team-member {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    img {
+      transition: all ease 0.4s;
+      transform: scale(1);
+    }
+
+    &::before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      transition: all ease 0.4s;
+      z-index: 1;
+      background-color: rgba($color: #000000, $alpha: 0.5);
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &:after {
+      opacity: 1;
+      visibility: visible;
+      background-color: transparent;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0) 35%);
+    }
+
+    &:hover {
+      .member-content {
+        bottom: 40px;
+      }
+
+      &::before,
+      .social-links {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &:after {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      img {
+        transform: scale(1.3);
+      }
+    }
+    
+  }
+
+  .member-content {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    transition: all ease 0.4s;
+    z-index: 2;
+  }
+
+  .degi,
+  .name,
+  a {
+    color: $white-color;
+  }
+
+  .name {
+    font-weight: 500;
+  }
+
+  .degi {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+
+  .social-links {
+    margin: 0 ;
+    padding: 0 !important;
+    list-style: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.4s;
+
+    li {
+      display: inline-block;
+      margin-bottom: 0 !important;
+      padding-left: 0 !important;
+      margin-right: 8px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+
+    a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-color: $white-color;
+      color: $primary-color;
+      line-height: 41px;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $white-color;
+      }
+    }
+  }
+}
+
+
+@include xl {
+  .team-layout7 {
+    .social-links {
+      li {
+        margin-right: 5px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      
+      a {
+        width: 35px;
+        height: 35px;
+        line-height: 36px;
+        font-size: 14px;
+      }
+    }
+  }
+}

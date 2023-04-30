@@ -1,0 +1,35 @@
+.contact-form-layout4 {
+  
+  .contact-form {
+    background-color: rgba($color: #000000, $alpha: 0.60);
+    padding: 80px;
+  }
+
+  .form-title {
+    font-weight: 600; 
+    text-transform: uppercase;
+    font-family: $titleFont;
+    margin-bottom: 15px;
+  }
+
+  .form-subtitle {
+    margin-bottom: 20px;
+  }
+}
+
+
+@include xl {
+  .contact-form-layout4 {
+    .contact-form {
+      padding: 30px;
+    }
+  }
+}
+
+@include xl {
+  .contact-form-layout4 {
+    .contact-form {
+      padding: 15px 20px;
+    }
+  }
+}

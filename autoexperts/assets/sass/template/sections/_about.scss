@@ -1,0 +1,79 @@
+.about-us-sec {
+
+  // Experiance Box
+  .experiance-box {
+    background-image: url('../img/bg-img/ab-experiance-box-bg.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 50px 45px 50px 40px;
+    min-width: 470px;
+    margin-top: -80px;
+    right: -85px;
+    z-index: 1;
+
+    .icon {
+      span {
+        display: inline-block;
+        @include equal-size-lineHeight(80px);
+        background-color: $white-color;
+        text-align: center;
+        font-size: 40px;
+        position: relative;
+        margin-right: 20px;
+        color: $primary-color;
+        z-index: 1;
+        @include border-radius(50%);
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: -5px;
+          left: -5px;
+          bottom: -5px;
+          right: -5px;
+          border: 2px dashed $white-color;
+          z-index: -1;
+          @include border-radius(50%);
+          animation: cspine 10s linear infinite;
+        }
+      }
+    }
+
+
+
+    .content {
+      width: calc(100% - 100px);
+
+      .main-title {
+        position: absolute;
+        top: -25px;
+        left: 32px;
+        color: $white-color;
+        font-size: 48px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 0;
+        text-shadow: 3px 3px 0px #000;
+      }
+
+      .title {
+        color: $white-color;
+        font-size: 22px;
+        font-weight: 500;
+        font-family: $bodyFont;
+        letter-spacing: 1px;
+        margin-bottom: 15px;
+      }
+
+      .text {
+        color: $white-color;
+        margin-bottom: 0;
+      }
+
+    }
+
+
+  }
+}

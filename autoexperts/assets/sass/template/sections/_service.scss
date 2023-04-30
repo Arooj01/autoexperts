@@ -1,0 +1,130 @@
+.our-service-wrapper {
+  .service-box {
+    padding: 60px 0;
+    padding-bottom: 55px;
+    text-align: center;
+    background-color: $white-color;
+    overflow: hidden;
+    position: relative;
+
+    .service-img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 101%;
+      height: 101%;
+      visibility: visible;
+      opacity: 1;
+      transform-origin: bottom;
+      @include transform(rotateX(-90deg));
+      @include transition(all cubic-bezier(0.4, 0, 1, 1) 0.3s);
+
+      &:before {
+        content: '';
+        @include overlay(0.70, 1);
+        background-color: rgba(0, 0, 0, 0.70);
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+
+    .service-icon {
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      line-height: 80px;
+      background-color: $primary-color;
+      font-size: 38px;
+      color: $white-color;
+      box-shadow: 0 5px 29px -10px $primary-color;
+      margin-bottom: 30px;
+      @include border-radius(50%);
+      z-index: 3;
+      position: relative;
+      @include transition(all ease 0.4s);
+      animation: cscale 3s infinite alternate
+    }
+
+
+    .bottom-icon {
+      font-size: 16px;
+      margin-bottom: 0;
+      position: absolute;
+      bottom: -70px;
+      left: 50%;
+      margin-left: -40px;
+      line-height: 10px;
+      padding-top: 13px;
+      background-color: $primary-color2;
+      box-shadow: none;
+      opacity: 0;
+      visibility: hidden;
+      animation: none;
+
+      &:hover {
+        background-color: $white-color !important;
+        color: $primary-color2;
+      }
+    }
+
+
+    .service-content {
+      position: relative;
+      z-index: 1;
+      padding: 0 40px;
+
+      .title {
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+        font-family: $bodyFont;
+        @include transition(all ease 0.4s);
+      }
+
+      p {
+        margin-bottom: 0;
+        @include transition(all ease 0.4s);
+      }
+    }
+
+
+    &:hover {
+      .service-img {
+        opacity: 1;
+        visibility: visible;
+        @include transform(rotateX(0));
+      }
+
+      .service-icon {
+        background-color: $primary-color2;
+        box-shadow: none;
+      }
+
+      .bottom-icon {
+        opacity: 1;
+        visibility: visible;
+        bottom: -40px;
+
+
+      }
+
+      .service-content {
+        .title {
+          color: $white-color;
+        }
+
+        p {
+          color: $white-color;
+        }
+      }
+
+    }
+
+  }
+
+
+}

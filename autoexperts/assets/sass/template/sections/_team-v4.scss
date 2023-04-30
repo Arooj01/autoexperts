@@ -1,0 +1,134 @@
+// Our Team Layout 4 
+.team-layout4 {
+
+  .team-member {
+    text-align: center;
+    box-shadow: 0px 7px 28.5px 1.5px rgba(0, 0, 0, 0.1);
+    padding: 60px 0;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+
+    .member-img {
+      background-color: #060d1d;
+      @include overlay(0, 0);
+      visibility: hidden;
+      transform-origin: right top;
+      @include transform(scale(1.1));
+      @include transition(all ease 0.4s);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      &:before {
+        content: '';
+        @include overlay(0.51, 1);
+        background-color: #060d1d;
+      }
+
+    }
+
+    .member-thumb-img,
+    .member-text,
+    ul {
+      position: relative;
+      z-index: 3;
+    }
+
+    .member-thumb-img {
+      @include equal-size(190px);
+      margin: 0 auto;
+      border: 3px solid $primary-color;
+      padding: 10px;
+      margin-bottom: 40px;
+      @include border-radius(50%);
+      opacity: 1;
+      visibility: visible;
+      @include transform(scale(1));
+      @include transition(all ease 0.3s);
+
+      img {
+        @include equal-size(100%)
+      }
+    }
+
+
+    .member-text {
+      margin-bottom: 25px;
+
+      .name {
+        font-size: 22px;
+        margin-bottom: 3px;
+
+        a {
+          color: inherit;
+
+          &:Hover {
+            color: inherit;
+          }
+        }
+      }
+
+      .degi {
+        font-size: 14px;
+        color: $primary-color;
+        letter-spacing: 0.20px;
+        @include transition(all ease 0.4s);
+      }
+    }
+
+
+    ul {
+      li {
+        display: inline-block;
+        margin: 0 3px;
+
+        a {
+          display: inline-block;
+          @include equal-size-lineHeight(45px);
+          text-align: center;
+          background-color: $white-color;
+          color: $primary-color;
+          @include border-radius(50%);
+          box-shadow: 0px 10px 27px 3px rgba(0, 0, 0, 0.05);
+
+
+          &:hover {
+            color: $white-color;
+            background-color: $primary-color2;
+          }
+        }
+      }
+    }
+
+
+    &:hover {
+      .member-img {
+        opacity: 1;
+        visibility: visible;
+        @include transform(scale(1));
+      }
+
+      .member-thumb-img {
+        opacity: 0;
+        visibility: hidden;
+        @include transform(scale(0.5));
+      }
+
+      .member-text {
+
+        .name,
+        .degi {
+          color: $white-color;
+        }
+      }
+    }
+
+
+
+  }
+
+
+}

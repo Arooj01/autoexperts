@@ -1,0 +1,49 @@
+// Layout 2
+.repair-estimator-layout2 {
+
+  &:before {
+    display: none;
+  }
+
+  .inner-wrap {
+    padding: 80px 80px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid $primary-color2;
+    box-shadow: 0 0 65px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: -140px;
+    z-index: 2;
+    background-color: $white-color;
+  }
+
+
+  .estimator-title-area {
+    .title {
+      color: $titleColor;
+      font-size: 40px;
+    }
+
+    .text {
+      color: $bColor;
+    }
+
+  }
+
+  form.estimator-form {
+    .select2-container {
+      span.select2-selection {
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+
+      }
+    }
+
+    input {
+      box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+
+      &:focus {
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+
+}

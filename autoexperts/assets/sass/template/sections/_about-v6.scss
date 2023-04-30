@@ -1,0 +1,169 @@
+.about-content-box6 {
+
+  .about-title {
+    font-size: 48px;
+    text-transform: uppercase;
+  }
+}
+.vs-list-style1,
+.about-content-box6 {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 35px;
+
+    li {
+      position: relative;
+      margin-bottom: 10px;
+
+      &:before {
+        content: '\f111';
+        position: relative;
+        left: 0;
+        top: -4px;
+        font-size: 18px;
+        font-family: $iconFont2;
+        font-weight: 900;
+        font-size: 5px;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        text-align: center;
+        box-shadow: inset 0 0 6px -2px $primary-color;
+        line-height: 15px;
+        margin-right: 15px;
+        color: $primary-color;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+
+.about-img-box6 {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 70%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.65) 30%, transparent 100%);
+  }
+
+
+  
+  a.video-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -50px;
+    
+
+    .ripple,
+    .btn-text {
+      background-color: $primary-color2;
+    }
+
+    &:hover {
+      .ripple,
+      .btn-text {
+        color: $primary-color2;
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  .image-title {
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    line-height: 1;
+    position: absolute;
+    left: 30px;
+    bottom: 28px;
+
+    .counter {
+      font-size: 70px;
+      -webkit-text-stroke: 0px transparent;
+      vertical-align: sub;
+    }
+  }
+
+
+
+}
+
+
+@media (max-width: $xl) {
+
+  .about-content-box6 {
+    .about-title {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+  }
+
+
+  .about-img-box6 {
+    .image-title {
+      font-size: 26px;
+
+      .counter {
+        font-size: 2.5rem;
+      }
+    }
+
+    .video-btn {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 22px;
+    }
+
+
+  }
+
+}
+
+
+@media (max-width: $md) {
+  .about-img-box6 {
+    margin-bottom: 30px;
+  }
+}
+
+
+@media (max-width: $sm) {
+  
+  .about-content-box6 {
+    
+    .about-title {
+      font-size: 26px;
+      margin-bottom: 0;
+    }
+    
+  }
+  
+  
+  .about-img-box6 {
+    margin-bottom: 20px;
+    
+    .image-title {
+      font-size: 18px;
+      left: 10px;
+      bottom: 10px;
+
+      span {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+}

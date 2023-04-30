@@ -1,0 +1,171 @@
+// Pricing Layout 2
+.pricing-table-layout2 {
+  &.pt-190 {
+    padding-top: 190px;
+  }
+
+  .pricing-table {
+    margin-bottom: 100px;
+    padding-bottom: 60px;
+    position: relative;
+    overflow: visible;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 16%, rgba(255, 255, 255, 0.9444152661064426) 43%, rgba(255, 255, 255, 0.8575805322128851) 62%, rgba(255, 255, 255, 0.7091211484593838) 77%, rgba(255, 255, 255, 0.4009978991596639) 90%, rgba(255, 255, 255, 0) 97%);
+    box-shadow: 0 75px 85px -21px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all ease 0.4s);
+    @include transform(translateY(0));
+
+    &:hover {
+      @include transform(translateY(10px));
+    }
+
+    .pricing-icon {
+      position: relative;
+      padding-top: 10px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        border-radius: 50%;
+        transform: translateX(-50%);
+        width: 186px;
+        height: 186px;
+        box-shadow: inset 0px 1px 50px 0px rgba(0, 0, 0, 0.02), inset 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+      }
+
+
+
+
+      .circle-btn {
+        width: 167px;
+        height: 167px;
+        line-height: 167px;
+        font-size: 76px;
+        margin-bottom: 60px;
+        background-color: $primary-color2;
+
+        &:hover {
+          color: $white-color;
+        }
+      }
+    }
+
+    span.price-amount {
+      font-size: 60px;
+      font-weight: 700;
+      line-height: 1;
+      color: $primary-color2;
+      display: block;
+      padding: 13px 0;
+      margin-bottom: 30px;
+    }
+
+    ul.pricing-list {
+      margin-bottom: 50px;
+
+      li {
+        margin-bottom: 18px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .price-plan {
+      position: absolute;
+      left: -52%;
+      top: 52.5%;
+      background-color: $primary-color2;
+      width: 100%;
+      min-width: 450px;
+      z-index: 3;
+      text-align: center;
+      border-top-right-radius: 28px;
+      border-top-left-radius: 28px;
+      @include transform(rotate(-90deg) translateY(-50%));
+
+      .plan-text {
+        color: $white-color;
+        margin-bottom: 0;
+        padding: 17px 0;
+        font-size: 24px;
+        text-transform: none;
+        font-weight: 500;
+      }
+
+
+      span.shape {
+        position: absolute;
+        left: 65px;
+        width: 3px;
+        height: 75px;
+        top: 40.59%;
+        background: linear-gradient(0deg, $primary-color2 50%, rgba(255, 255, 255, 1) 50%);
+
+        &.shape2 {
+          left: auto;
+          right: 65px;
+        }
+
+        &:after,
+        &:before {
+          content: '';
+          position: absolute;
+          width: 7px;
+          height: 7px;
+          top: 3px;
+          left: -2.5px;
+          display: inline-block;
+          background-color: $primary-color2;
+          box-shadow: 0 0 1px 5px $white-color;
+          @include border-radius(50%);
+        }
+
+        &:after {
+          top: auto;
+          bottom: 3px;
+          background-color: $white-color;
+          box-shadow: 0 0 1px 5px $primary-color2;
+        }
+
+      }
+
+
+
+    }
+
+
+
+
+
+
+
+  }
+
+
+  .slick-active {
+    .pricing-table {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .inner-wrapper {
+    width: 100%;
+    max-width: 1492px;
+    margin: 0 auto;
+    overflow: hidden !important;
+    padding: 0 61px;
+
+    .slick-list {
+      overflow: visible;
+    }
+  }
+
+
+
+}

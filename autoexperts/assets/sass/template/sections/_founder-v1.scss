@@ -1,0 +1,110 @@
+// Founder Layout 1
+.founder-layout1 {
+
+  &.background-image {
+    position: relative;
+
+    &:after,
+    &:before {
+      content: '';
+      @include overlay(0.95, 2);
+      background-color: $secondary-color2;
+    }
+
+    &:after {
+      background-color: $white-color;
+      z-index: 1;
+      opacity: 0.50;
+    }
+  }
+
+
+  .axivis-founder {
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 4;
+
+    &:nth-child(odd) {
+      .row {
+        flex-direction: row-reverse;
+      }
+
+      .founder-content {
+        padding-left: 0;
+        padding-right: 45px;
+      }
+    }
+
+
+    .founder-img {
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .social-links {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      margin-bottom: -22.5px;
+
+      ul {
+
+        li {
+          display: inline-block;
+          margin: 0 5px;
+
+          a {
+            display: inline-block;
+            @include equal-size(45px);
+            background-color: $white-color;
+            line-height: 46px;
+            color: $primary-color;
+            box-shadow: 0 7px 28px -12px $primary-color;
+            @include border-radius(50%);
+
+            &:hover {
+              background-color: $primary-color;
+              color: $white-color;
+            }
+          }
+        }
+      }
+
+
+    }
+
+
+
+    .founder-content {
+      padding-left: 45px;
+
+      span.degi {
+        font-size: 18px;
+        font-weight: 500;
+        color: $primary-color;
+        display: inline-block;
+      }
+
+      .name {
+        font-weight: 500;
+        font-family: $bodyFont;
+        font-size: 40px;
+        letter-spacing: 0.20px;
+        margin-bottom: 15px;
+      }
+
+
+    }
+
+
+  }
+
+
+
+
+}

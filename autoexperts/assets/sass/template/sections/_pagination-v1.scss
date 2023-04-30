@@ -1,0 +1,37 @@
+// Pagination Layout 1
+.pagination-layout1 {
+  text-align: center;
+
+  ul {
+    li {
+      display: inline-block;
+      margin: 0 3px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      a {
+        display: inline-block;
+        border: 1px solid #cbdafc;
+        color: $titleColor;
+        font-weight: 700;
+        background-color: $white-color;
+        font-size: 16px;
+        @include equal-size-lineHeight(50px);
+
+
+        &:hover {
+          background-color: $primary-color;
+          color: $white-color;
+          border-color: transparent;
+        }
+      }
+    }
+  }
+
+}

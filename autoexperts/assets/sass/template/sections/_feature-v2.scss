@@ -1,0 +1,64 @@
+// Featured Layout 2
+.featured-layout2 {
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -75px;
+    width: 100%;
+    height: 100%;
+    max-width: 625px;
+    max-height: 410px;
+    background-image: url('../img/featured/bg-shape-2-1.png');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+
+
+  .single-featured {
+    margin-bottom: 30px;
+
+    .featured-icon {
+      .circle-btn {
+        background-color: $primary-color2;
+
+        &:hover {
+          color: $white-color;
+        }
+      }
+    }
+
+    .shape {
+      border-color: $primary-color2 !important;
+
+      &:after,
+      &:before {
+        background-color: $primary-color2 !important;
+      }
+    }
+
+    .featured-content {
+      box-shadow: 0 20px 38px -11px rgba(0, 0, 0, 0.05);
+      @include transition(all ease 0.4s);
+
+      .text {
+        color: $bColor2;
+      }
+    }
+
+    &:hover {
+
+      .featured-content {
+        box-shadow: none;
+      }
+    }
+
+
+  }
+
+}

@@ -1,0 +1,231 @@
+// Our Team Layout 1
+.team-layout1 {
+  position: relative;
+  overflow: hidden;
+
+  .slick-track {
+
+    >[class^="col-"] {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+
+
+  &:after,
+  &:before {
+    content: '';
+    position: absolute;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    @include equal-size(100%);
+  }
+
+  &:before {
+    background-image: url('../img/team-member/bg-shape-1-1.png');
+    max-width: 980px;
+    max-height: 640px;
+    top: -160px;
+    left: 0;
+  }
+
+  &:after {
+    background-image: url('../img/team-member/bg-shape-1-2.png');
+    max-width: 705px;
+    max-height: 576px;
+    bottom: -330px;
+    right: 0;
+  }
+
+
+  &.wrap-layout2 {
+
+    &:after,
+    &:before {
+      display: none;
+    }
+  }
+
+
+  .team-member {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 45px;
+    z-index: 2;
+
+    .member-img {
+      img {
+        width: 100%;
+      }
+    }
+
+    ul.social-links {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      overflow: hidden;
+      text-align: center;
+      opacity: 0;
+      visibility: hidden;
+      padding: 2.5px 0;
+      @include transition(all ease 0.4s);
+
+      li {
+        display: inline-block;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        a {
+          display: inline-block;
+          text-align: center;
+          background-color: $primary-color2;
+          color: $white-color;
+          line-height: 45px;
+          position: relative;
+          visibility: hidden;
+          opacity: 0;
+          @include equal-size(45px);
+          @include border-radius(50%);
+          @include transition(all ease 0.4s);
+          @include transform(translateX(-20px));
+
+          &:hover {
+            background-color: $white-color;
+            color: $primary-color2;
+          }
+        }
+      }
+
+      &.show {
+        opacity: 1;
+        visibility: visible;
+        width: 100%;
+
+        li {
+          a {
+            opacity: 1;
+            visibility: visible;
+            @include transform(translateX(0));
+          }
+        }
+      }
+
+
+    }
+
+    .btn-overly {
+      position: absolute;
+      top: 0;
+      right: 40px;
+      opacity: 1;
+      visibility: visible;
+      @include transform(translateX(0));
+      @include transition(all ease 0.4s);
+
+
+      &.hide {
+
+        @include transform(translateX(20px));
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+
+    .link-area {
+      position: absolute;
+      top: 0;
+      height: 50px;
+      width: 100%;
+      margin-top: -25px;
+      background-color: transparent;
+    }
+
+
+
+
+    .team-member ul.social-links li:last-child {
+      margin-right: 0;
+    }
+
+
+
+
+
+    .member-text {
+      text-align: center;
+      position: relative;
+      background-color: $white-color;
+      padding: 25px 0 20px 0;
+      margin: 0 30px;
+      margin-top: -60px;
+      overflow: hidden;
+      box-shadow: 0px 15px 47.5px 2.5px rgba(0, 0, 0, 0.05);
+
+
+      span {
+        color: $primary-color;
+        font-size: 14px;
+        display: inline-block;
+        margin-bottom: 7px;
+      }
+
+      .name {
+        font-size: 22px;
+        letter-spacing: 0;
+        font-family: $bodyFont;
+        text-transform: capitalize;
+        margin-bottom: 0;
+      }
+
+
+
+
+    }
+
+    &:hover {
+
+      .btn-overly {
+        background-color: $primary-color2;
+        color: $white-color;
+        box-shadow: 0 0 0 17px $white-color;
+
+        .ripple {
+          background-color: $primary-color2;
+        }
+      }
+
+      .member-text {
+        span {
+          color: $primary-color2;
+        }
+
+
+        &:before,
+        &:after {
+          top: -270px;
+        }
+
+        &:after {
+          top: auto;
+          bottom: -225px;
+        }
+      }
+
+
+    }
+
+
+  }
+
+
+
+
+}

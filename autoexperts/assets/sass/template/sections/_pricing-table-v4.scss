@@ -1,0 +1,77 @@
+// Pricing Layout 4
+.pricing-table-layout4 {
+  background-color: #fbfbfb;
+  position: relative;
+  overflow: hidden;
+  background-image: url('../img/bg-img/pricing-plan-bg-4-1.png');
+  @extend .shape-bg-100;
+
+  .shape-bg {
+    right: 0;
+    bottom: 30px;
+    animation: upDown 10s alternate infinite;
+  }
+
+
+
+  .pricing-table {
+    padding-top: 90px;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
+    background-color: $white-color;
+    box-shadow: 0 0 35px -15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    @include transform(translateY(0));
+    @include transition(all ease 0.4s);
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 255px;
+      background-color: $primary-color;
+      clip-path: polygon(100% 0%, 100% 49%, 100% 93%, 37% 80%, 0 100%, 0 0);
+    }
+
+    .price-amount {
+      display: inline-block;
+      width: 186px;
+      height: 186px;
+      line-height: 169px;
+      background-color: $primary-color;
+      color: $white-color;
+      border: 10px solid $white-color;
+      font-size: 60px;
+      font-weight: 700;
+      letter-spacing: 0.20px;
+      margin-bottom: 40px;
+      @include border-radius(50%);
+      position: relative;
+      z-index: 2;
+    }
+
+    .pricing-list {
+      padding-top: 10px;
+      padding-bottom: 50px;
+
+      li {
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+
+
+    &:hover {
+      @include transform(translateY(10px));
+    }
+
+  }
+
+
+
+}

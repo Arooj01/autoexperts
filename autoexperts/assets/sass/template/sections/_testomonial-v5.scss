@@ -1,0 +1,49 @@
+// Testomonial Layout 5 
+.testomonial-layout5 {
+  background-color: #00123b;
+
+  .single-testomonial {
+    display: flex;
+    align-items: center;
+    padding: 80px 100px;
+
+    .testo-author {
+      width: 245px;
+      margin-right: 50px;
+    }
+
+
+    .testomonial-content {
+      width: calc(100% - 295px);
+
+      .text {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 32px;
+        margin-bottom: 15px;
+      }
+
+      .rating {
+        color: #ffd200;
+        font-size: 20px;
+
+        i {
+          margin-right: 2px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+    }
+
+
+
+
+  }
+
+
+}

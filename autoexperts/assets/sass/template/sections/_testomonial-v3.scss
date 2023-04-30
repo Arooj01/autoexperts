@@ -1,0 +1,145 @@
+// Testomonial Layout 3
+.testomonial-layout3 {
+
+  .inner-wrapper {
+    background-color: $white-color;
+    box-shadow: 0 11px 35px 0 rgba(0, 0, 0, 0.1);
+  }
+
+
+  .single-testomonial {
+    text-align: center;
+    background-color: #fff;
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    min-height: 660px;
+
+
+
+    .testomonial-content {
+      .title {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 20px;
+        text-transform: none;
+        letter-spacing: 0;
+      }
+
+      .text {
+        font-style: italic;
+        letter-spacing: 0;
+        max-width: 440px;
+        margin: 0 auto;
+        margin-bottom: 45px;
+        color: $bColor2;
+      }
+
+
+
+
+    }
+
+    .testo-author {
+      .avater {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 25px;
+      }
+
+      .name {
+        font-size: 20px;
+        letter-spacing: 0;
+        margin-bottom: 4px;
+      }
+
+      span {
+        font-size: 16px;
+        color: $primary-color;
+        display: inline-block;
+      }
+
+    }
+
+  }
+
+
+
+  ul.slick-dots {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    border: 2px dashed $primary-color;
+    background-color: $white-color;
+    padding: 8px 10px;
+    text-align: center;
+    line-height: 0;
+    min-width: 70px;
+    min-height: 30px;
+    box-shadow: 0 5px 27px -6px rgba(0, 0, 0, 0.2);
+    @include border-radius(50px);
+    @include transform(translate(-50%));
+
+    li {
+      display: inline-block;
+      margin: 0 5px;
+      line-height: 0;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      button {
+        padding: 0;
+        border: none;
+        line-height: 1;
+        font-size: 0;
+        @include equal-size(5px);
+        background-color: $primary-color;
+        @include border-radius(50%);
+        @include transition(all ease 0.4s);
+      }
+
+
+      &.slick-active {
+        button {
+          @include equal-size(10px);
+        }
+      }
+
+    }
+  }
+
+
+  span.quote-top {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform(translate(-50%, -50%));
+
+    i {
+      display: inline-block;
+      @include equal-size(175px);
+      background-color: $primary-color;
+      color: $white-color;
+      text-align: center;
+      font-size: 72px;
+      line-height: 152px;
+      @include border-radius(50%);
+      border: 10px solid $white-color;
+    }
+
+    .ripple {
+      background-color: $white-color;
+    }
+  }
+
+
+}

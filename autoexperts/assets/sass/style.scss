@@ -1,0 +1,415 @@
+/*
+Template Name: Axivis - Car Services and Repair HTML Template
+Template URI: http://vecurosoft.com/products/html/axivis
+Description: Axivis - Car Services and Repair HTML Template
+Author: Vecuro
+Author URI: https://themeforest.net/user/vecuro
+Version: 2.0.0
+*/
+/*=================================
+    CSS Index End
+==================================*/
+/*
+01. Variable
+02. Typography
+03. Theme Global Layout
+04. Bootstrap Overwrite
+    4.1 Grid
+    4.2 Form
+05. Vendor Custom Style
+    5.1. Select 2 
+    5.2. Mobile Menu
+    5.3. Date & Time Picker
+    5.4. Slick Slider
+06. Template Style
+    6.1. header Top
+    6.2. header Middle
+    6.3. Header
+    6.4. Hero Section
+    6.5. About Us
+    6.6. Service
+    6.7. Repair Estimator
+    6.8. Work Process
+    6.9. Latest Project
+    6.10. Our Team
+    6.11. Featured
+    6.12. Pricing Table
+    6.13. Testomonial
+    6.14. Counter
+    6.15. Blog
+    6.16. Subscribe Area
+    6.17. Brand
+    6.18. CTA Area
+    6.19. Gallery
+    6.20. Breadcumb
+    6.22. Contact Form
+    6.23. Mission Vision
+    6.24. Appointment Form
+    6.25. Error Page
+    6.26. Pricing Details
+    6.27. Project
+    6.28. Pagination
+    6.29. Branch Information
+    6.30. Contact Map
+    6.31. axivis Founder
+    6.32. Team Details
+    6.33. Service Details
+    6.34. Popup Search Box
+    6.35. Popup Side Menu
+    6.36. Widget
+    6.37. Footer
+    6.38. Shop
+    6.39. Shop Details
+    6.40. Inner Form Design
+    6.41. Shopping Cart
+    6.42. Checkout
+    6.43. Skill Area
+07. Helper Classes
+    7.1. Background
+    7.2. Text Color
+    7.3. Padding
+    7.4. Margin
+
+*/
+
+/*=================================
+    CSS Index End
+==================================*/
+// mixin
+@import 'mixin/mixin';
+// function
+@import 'function/function';
+
+
+/*=================================
+01. Variable
+==================================*/
+@import 'variable/variable';
+
+
+/*=================================
+02. Typography
+==================================*/
+@import 'reset/predefine';
+
+
+
+/*=================================
+03. Theme Global Layout
+==================================*/
+@import 'reset/inheritance';
+
+
+
+/*=================================
+04. Bootstrap Overwrite
+==================================*/
+@import 'reset/bootstrap';
+
+
+
+/*=================================
+05. Vendor Custom Style
+==================================*/
+/*------------------- 5.1. Select 2 -------------------*/
+@import 'vendor/select2';
+
+/*------------------- 5.2. Mobile Menu  -------------------*/
+@import 'vendor/mobile-menu';
+
+/*------------------- 5.3. Date & Time Picker  -------------------*/
+@import 'vendor/datepicker';
+
+/*------------------- 5.4. Slick Slider  -------------------*/
+@import 'vendor/slick-slider';
+
+
+
+
+/*=================================
+06. Template Style
+==================================*/
+
+/*------------------- 6.1. header Top -------------------*/
+@import 'template/headers/header-top';
+
+
+
+/*------------------- 6.2. header Middle -------------------*/
+@import 'template/headers/header-middle';
+
+
+/*------------------- 6.3. Header -------------------*/
+@import 'template/headers/header';
+
+
+
+/*------------------- 6.4. Hero Section -------------------*/
+@import 'template/sections/hero';
+
+
+
+/*------------------- 6.5. About Us -------------------*/
+@import 'template/sections/about';
+@import 'template/sections/about-v1';
+@import 'template/sections/about-v2';
+@import 'template/sections/about-v3';
+@import 'template/sections/about-v4';
+@import 'template/sections/about-v5';
+@import 'template/sections/about-v6';
+
+
+/*------------------- 6.6. Service -------------------*/
+@import 'template/sections/service';
+@import 'template/sections/service-v1';
+@import 'template/sections/service-v2';
+@import 'template/sections/service-v3';
+@import 'template/sections/service-v4';
+@import 'template/sections/service-v5';
+
+
+/*------------------- 6.7. Repair Estimator  -------------------*/
+@import 'template/sections/repair-estimator';
+@import 'template/sections/repair-estimator-v1';
+@import 'template/sections/repair-estimator-v2';
+
+
+/*------------------- 6.8. Work Process  -------------------*/
+@import 'template/sections/work-process-v1';
+@import 'template/sections/work-process-v2';
+@import 'template/sections/work-process-v3';
+@import 'template/sections/work-process-v4';
+@import 'template/sections/work-process-v5';
+@import 'template/sections/work-process-v6';
+
+
+
+/*------------------- 6.9. Latest Project -------------------*/
+@import 'template/sections/latest-project';
+
+
+
+/*------------------- 6.10. Our Team -------------------*/
+@import 'template/sections/team-v1';
+@import 'template/sections/team-v2';
+@import 'template/sections/team-v3';
+@import 'template/sections/team-v4';
+@import 'template/sections/team-v5';
+@import 'template/sections/team-v6';
+@import 'template/sections/team-v7';
+
+
+/*------------------- 6.11. Featured -------------------*/
+@import 'template/sections/feature';
+@import 'template/sections/feature-v1';
+@import 'template/sections/feature-v2';
+@import 'template/sections/feature-v3';
+@import 'template/sections/feature-v4';
+
+
+/*------------------- 6.12. Pricing Table -------------------*/
+@import 'template/sections/pricing-table';
+@import 'template/sections/pricing-table-v1';
+@import 'template/sections/pricing-table-v2';
+@import 'template/sections/pricing-table-v3';
+@import 'template/sections/pricing-table-v4';
+
+
+/*------------------- 6.13. Testomonial -------------------*/
+@import 'template/sections/testomonial-v1';
+@import 'template/sections/testomonial-v2';
+@import 'template/sections/testomonial-v3';
+@import 'template/sections/testomonial-v4';
+@import 'template/sections/testomonial-v5';
+
+
+/*------------------- 6.14. Counter -------------------*/
+@import 'template/sections/counter-v1';
+@import 'template/sections/counter-v2';
+@import 'template/sections/counter-v3';
+@import 'template/sections/counter-v4';
+
+
+
+/*------------------- 6.15. Blog -------------------*/
+@import 'template/sections/blog-v1';
+@import 'template/sections/blog-v2';
+@import 'template/sections/blog-v3';
+@import 'template/sections/blog-v4';
+@import 'template/sections/blog-single-v1';
+
+
+
+/*------------------- 6.16. Subscribe Area -------------------*/
+@import 'template/sections/subscribe';
+@import 'template/sections/subscribe-v1';
+@import 'template/sections/subscribe-v2';
+@import 'template/sections/subscribe-v3';
+
+
+/*------------------- 6.17. Brand  -------------------*/
+@import 'template/sections/brand';
+
+
+/*------------------- 6.18. CTA Area -------------------*/
+@import 'template/sections/cta';
+
+
+/*------------------- 6.19. Gallery -------------------*/
+@import 'template/sections/gallery-v1';
+
+
+
+
+
+/*------------------- 6.20. Breadcumb -------------------*/
+@import 'template/breadcumbs/breadcumb-v1';
+
+
+
+/*------------------- 6.21. FAQ Area -------------------*/
+@import 'template/sections/faq-v1';
+@import 'template/sections/faq-v2';
+@import 'template/sections/faq-v3';
+@import 'template/sections/faq-v4';
+
+
+
+
+
+/*------------------- 6.22. Contact Form -------------------*/
+@import 'template/sections/contact-form-v1';
+@import 'template/sections/contact-form-v2';
+@import 'template/sections/contact-form-v3';
+@import 'template/sections/contact-form-v4';
+@import 'template/sections/contact-form-v5';
+
+
+/*------------------- 6.23. Mission Vision -------------------*/
+@import 'template/sections/mission-v1';
+
+
+/*------------------- 6.24. Appointment Form -------------------*/
+@import 'template/sections/appointment-form';
+
+
+/*------------------- 6.25. Error Page -------------------*/
+@import 'template/sections/error.v1.scss';
+
+
+
+/*------------------- 6.26. Pricing Details -------------------*/
+@import 'template/sections/price-plan';
+
+
+/*------------------- 6.27. Project -------------------*/
+@import 'template/sections/project-v1';
+@import 'template/sections/project-v2';
+@import 'template/sections/project-details-v1';
+
+
+
+
+/*------------------- 6.28. Pagination -------------------*/
+@import 'template/sections/post-pagination-v1';
+@import 'template/sections/post-pagination-v2';
+@import 'template/sections/pagination-v1';
+
+
+/*------------------- 6.29. Branch Information -------------------*/
+@import 'template/sections/branch-info-v1';
+@import 'template/sections/branch-info-v2';
+
+
+
+/*------------------- 6.30. Contact Map -------------------*/
+@import 'template/sections/contact-map';
+
+
+/*------------------- 6.31. axivis Founder -------------------*/
+@import 'template/sections/founder-v1';
+
+
+/*------------------- 6.32. Team Details -------------------*/
+@import 'template/sections/team-details-v1';
+@import 'template/sections/team-details-v2';
+
+
+/*------------------- 6.33. Service Details -------------------*/
+@import 'template/sections/service-details-v1';
+
+
+
+/*------------------- 6.34. Popup Search Box -------------------*/
+@import 'template/sections/popup-search-v1.scss';
+
+
+/*------------------- 6.35. Popup Side Menu -------------------*/
+@import 'template/sections/sidemenu';
+
+
+
+/*------------------- 6.36 Widget -------------------*/
+@import 'template/widgets/sidebar-widget'; 
+
+
+
+
+
+/*------------------- 6.37 Footer -------------------*/
+@import 'template/footers/footer-v1';
+@import 'template/footers/footer-v2';
+@import 'template/footers/footer-v3';
+@import 'template/footers/footer-v4';
+
+
+
+
+/*------------------- 6.38. Shop -------------------*/
+@import 'template/sections/shop-v1';
+
+
+/*------------------- 6.39. Shop Details -------------------*/
+@import 'template/sections/shop-details-v1';
+
+
+/*------------------- 6.40. Inner Form Design -------------------*/
+@import 'template/sections/inner-form-v1';
+
+
+
+/*------------------- 6.41. Shopping Cart -------------------*/
+@import 'template/sections/cart';
+
+
+
+/*------------------- 6.42. Checkout -------------------*/
+@import 'template/sections/checkout';
+
+
+/*------------------- 6.43. Skill Area -------------------*/
+@import 'template/sections/skill-v1';
+
+
+
+
+
+
+
+/*=================================
+07. Helper Classes
+==================================*/
+
+/*------------------- 7.1. Background -------------------*/
+@import 'theme-global/background';
+
+/*------------------- 7.2. Text Color -------------------*/
+@import 'theme-global/text-color';
+
+/*------------------- 7.3 Padding -------------------*/
+@import 'theme-global/padding';
+
+/*------------------- 7.4 Margin -------------------*/
+@import 'theme-global/margin';
+
+

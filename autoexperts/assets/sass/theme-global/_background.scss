@@ -1,0 +1,66 @@
+.primary-bg1 {
+  background-color: $primary-color;
+}
+
+.primary-bg2 {
+  background-color: $primary-color2;
+}
+
+.secondary-bg1 {
+  background-color: $secondary-color;
+}
+
+.secondary-bg2 {
+  background-color: $secondary-color2;
+}
+
+.light-bg {
+  background-color: $light-color;
+}
+
+.background-image {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &.bg-cover {
+    background-size: cover;
+  }
+}
+
+.shape-bg-100 {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.shape-bg-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.shape-bg {
+  position: absolute;
+  width: auto;
+  height: auto;
+
+  &.shape-br {
+    bottom: 0;
+    right: 0;
+  }
+}
+
+
+.bg-shape-none {
+
+  .shape-bg,
+  &:before,
+  &:after {
+    display: none !important;
+  }
+}
+
+.no-shadow {
+  box-shadow: none;
+}

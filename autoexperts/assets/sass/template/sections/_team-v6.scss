@@ -1,0 +1,146 @@
+.team-layout6 {
+  .team-member {
+    background-color: #f8f8f8;
+    margin-right: 25px;
+    padding: 40px 0;
+    padding-bottom: 35px;
+    position: relative;
+    margin-bottom: 30px;
+    transition: all ease 0.4s;
+
+    &:hover {
+      background-color: $white-color;
+      box-shadow: 0px 16px 30.4px 1.6px rgba(0, 0, 0, 0.06);
+      .member-img {
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+  }
+
+  .member-img {
+    @include equal-size(200px);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 23px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    img {
+      width: 100%;
+      transition: all ease 0.4s;
+      transform: scale(1);
+    }
+  }
+
+  .member-content {
+    text-align: center;
+  }
+
+
+  .name {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-family: $titleFont;
+  }
+
+  .degi {
+    font-size: 14px;
+    color: $primary-color;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+
+  .member-link {
+    box-shadow: 0px 16px 30.4px 1.6px rgba(0, 0, 0, 0.06);
+    @include equal-size(50px);
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    background-color: $white-color;
+    color: $primary-color;
+    font-size: 18px;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    margin-top: -25px;
+    opacity: 1;
+    visibility: visible;
+    transition: all ease 0.4s;
+
+    &.hide {
+      opacity: 0;
+      visibility: hidden;
+      right: -30px;
+    }
+  }
+
+  .social-links {
+    background-color: $primary-color;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 13px 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease 0.4s;
+
+    &.show {
+      right: -25px;
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    
+    li {
+      display: inline-block;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    
+    a {
+      line-height: 1;
+      color: $white-color;
+      font-size: 14px;
+    }
+  }
+
+
+}
+
+
+@include xl {
+  .team-layout6 {
+    .member-img {
+      @include equal-size(150px);
+    }
+
+    .name {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include sm {
+  .team-layout6 {
+    .team-member {
+      padding: 25px 0;
+      padding-bottom: 20px;
+    }
+
+    .member-img {
+      @include equal-size(100px);
+    }
+  }
+}

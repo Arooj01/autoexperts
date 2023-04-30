@@ -1,0 +1,127 @@
+.faq-layout4 {
+  position: relative;
+  
+  .shape {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: calc(100% - 120px);
+    background-size: cover;
+    background-position: right bottom;
+  }
+  
+  
+  .faq-area {
+    background-color: #0b1a30;
+    padding: 120px 100px;
+    padding-bottom: 105px;
+    min-height: 752px;
+  }
+  
+  .faq-header {
+    button {
+      border: 1px solid transparent;
+      text-align: left;
+      display: block;
+      color: $titleColor;
+      background-color: $white-color;
+      font-weight: 700;
+      width: 100%;
+      padding: 12px 25px;
+      padding-right: 35px;
+      position: relative;
+      border-radius: 3px;
+
+
+      &:before {
+        content: '\f068';
+        font-family: $iconFont2;
+        position: absolute;
+        right: 25px;
+        top: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 50px;
+      }
+      
+      &.collapsed {
+        border-color: rgba($color: #ffff, $alpha: 0.5);
+        color: $white-color;
+        background-color: transparent;
+        
+        &:before {
+          content: '\f067';
+        }
+      }
+    }
+  }
+
+  .faq-body {
+    padding: 25px;
+    padding-bottom: 10px;
+    
+    .faq-text {
+      color: $white-color;
+      margin-bottom: 0;
+    }
+  }
+
+  .single-faq {
+    margin-bottom: 15px;
+  }
+
+
+  .video-btn {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 61px);
+    transform: translate(-50%, -50%);
+  }
+
+
+}
+
+
+@include xl {
+  .faq-layout4 {
+    .faq-area {
+      padding: 40px 40px;
+      padding-bottom: 25px;
+      min-height: 592px;
+    }
+  }
+}
+
+
+@include xs {
+  .faq-layout4 {
+    .shape {
+      height: calc(100% - 60px);
+    }
+
+    .faq-area {
+      min-height: auto;
+      padding: 30px 10px 15px 10px;
+    }
+
+    .faq-header {
+      button {
+        padding: 10px ;
+        padding-right: 20px;
+        font-size: 14px;
+        
+
+        &:before {
+          line-height: 45px;
+          right: 10px;
+        }
+      }
+    }
+
+    .faq-body {
+      padding: 15px 15px 0 15px;
+    }
+    
+  }
+}

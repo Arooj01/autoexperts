@@ -1,0 +1,143 @@
+// Project Layout 1
+.project-layout1 {
+  position: relative;
+
+  .shape2 {
+    bottom: 40%;
+    left: 0;
+    animation: downUp 10s alternate infinite;
+  }
+
+  .shape1 {
+    top: 5%;
+    right: 0;
+    max-width: 700px;
+    animation: upDown 10s alternate infinite;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -75px;
+    @include equal-size(100%);
+    max-width: 625px;
+    max-height: 410px;
+    background-image: url(../img/featured/bg-shape-2-1.png);
+    @extend .shape-bg-100;
+  }
+
+  .axivis-project {
+    margin-bottom: 30px;
+
+    .project-img {
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        @include transition(all ease 0.4s);
+        @include transform(scale(1.001));
+      }
+    }
+
+    .project-content {
+      margin: 0 30px;
+      padding: 0 30px;
+      padding-top: 35px;
+      padding-bottom: 0;
+      background-color: #fff;
+      margin-top: -80px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 54px -4px rgba(0, 0, 0, 0.1);
+
+      &:before {
+        content: '';
+        position: absolute;
+        background-color: $primary-color;
+        left: 50%;
+        top: -225px;
+        opacity: 0.20;
+        z-index: 1;
+        @include equal-size(250px);
+        @include border-radius(50%);
+        @include transform(translateX(-50%));
+        @include transition(all 0.4s);
+      }
+
+      >span {
+        font-weight: 500;
+        color: $primary-color;
+        display: inline-block;
+        margin-bottom: 10px;
+
+        i {
+          margin-right: 10px;
+          font-size: 18px;
+        }
+      }
+
+      .project-title {
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 500;
+        text-transform: none;
+        margin-bottom: 21px;
+        letter-spacing: 0.20px;
+      }
+
+      .primary-btn {
+        width: 150px;
+      }
+
+
+      .content-bottom {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        span {
+          margin-bottom: 0;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: -41px;
+          right: -41px;
+          top: 0;
+          height: 1px;
+          background-color: #edf2f4;
+        }
+      }
+
+      .price {
+        font-size: 22px;
+        display: inline-block;
+        padding-top: 10px;
+        font-weight: 700;
+      }
+
+
+    }
+
+    &:hover {
+      .project-img {
+        img {
+          @include transform(scale(1.05));
+        }
+      }
+
+      .project-content {
+        &:before {
+          background-color: $primary-color2;
+        }
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,157 @@
+// Pricing Table Layout 3
+.pricing-table-layout3 {
+
+
+  .pricing-table {
+    padding-top: 90px;
+    padding-bottom: 80px;
+    position: relative;
+    @include transition(all ease 0.4s);
+
+    &:before {
+      content: '';
+      @include overlay(0, -1);
+      background-color: $primary-color;
+      background-image: url('../img/bg-img/pricing-table-bg-3-1.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      visibility: hidden;
+      @include transition(all ease 0.4s);
+    }
+
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 1px;
+      bottom: 0;
+      left: 1px;
+      z-index: -1;
+      opacity: 1;
+      visibility: visible;
+      border: 1px solid #dfe8fd;
+      @include transition(all ease 0.4s);
+    }
+
+    span.price-amount {
+      display: inline-block;
+      @include equal-size(186px);
+      line-height: 168px;
+      background-color: $primary-color;
+      border: 10px solid $white-color;
+      color: $white-color;
+      font-size: 50px;
+      font-weight: 700;
+      letter-spacing: 0.20px;
+      margin-bottom: 60px;
+      @include border-radius(50%);
+    }
+
+
+    ul.pricing-list {
+      padding-top: 12px;
+      padding-bottom: 45px;
+    }
+
+
+    &:hover {
+
+      &:before {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &:after {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .content {
+
+        p,
+        .title {
+          color: $white-color;
+        }
+
+      }
+
+      ul.pricing-list {
+        li {
+          color: $white-color;
+        }
+      }
+
+      a {
+        background-color: $white-color;
+        color: $primary-color;
+
+        &:Hover {
+          color: $white-color;
+        }
+      }
+
+    }
+
+  }
+
+
+  .no-gutters {
+    .slick-track {
+      >div {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+
+  .slick-center {
+    .pricing-table {
+
+      &:before {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &:after {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .content {
+
+        p,
+        .title {
+          color: $white-color;
+        }
+
+      }
+
+      ul.pricing-list {
+        li {
+          color: $white-color;
+        }
+      }
+
+      a {
+        background-color: $white-color;
+        color: $primary-color;
+
+        &:Hover {
+          color: $white-color;
+        }
+      }
+
+    }
+  }
+
+
+  .slick-slider {
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+  }
+
+
+}

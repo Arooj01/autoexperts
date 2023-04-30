@@ -1,0 +1,184 @@
+// About Us Layout 2
+.about-wrap-layout2 {
+  position: relative;
+
+  .shape-bg {
+    right: 0;
+    top: -170px;
+    animation: downUp 15s alternate infinite;
+  }
+
+  .about-us-img {
+    position: relative;
+    padding: 20px;
+
+    img {
+      box-shadow: 0px 10px 28.5px 1.5px rgba(0, 0, 0, 0.25);
+      position: relative;
+      z-index: 2;
+
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      max-width: 370px;
+      background-color: #e5e5e5;
+      z-index: 1;
+    }
+  }
+
+
+
+  .about-us-content {
+    padding-right: 40px;
+
+    .about-title {
+      font-size: 48px;
+      line-height: 60px;
+      text-transform: uppercase;
+      font-weight: 600;
+      max-width: 85%;
+      width: 100%;
+    }
+
+    p.text {
+      color: $bColor2;
+    }
+
+
+    .video-action {
+      margin-right: 60px;
+      padding-top: 15px;
+
+      .video-btn {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 17px;
+        margin-right: 20px;
+        background-color: $primary-color2;
+
+        span {
+          background-color: $primary-color2;
+        }
+
+        &:hover {
+          .btn-text {
+            color: $primary-color2;
+            background-color: $white-color;
+          }
+        }
+      }
+
+      a.text {
+        font-size: 18px;
+        display: inline-block;
+        font-weight: 500;
+        text-transform: capitalize;
+        color: $titleColor;
+
+        &:hover {
+          color: $primary-color2;
+        }
+      }
+    }
+
+    .author-signa {
+      padding-top: 10px;
+    }
+
+
+  }
+
+  .action-area {
+    padding-top: 85px;
+
+    .action-box {
+      display: flex;
+      align-items: center;
+      padding-right: 60px;
+      margin-right: 60px;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        height: 50px;
+        width: 2px;
+        top: calc(50% - 25px);
+        right: 0;
+        border-right: 2px dashed $primary-color2;
+        opacity: 0.15;
+      }
+
+      &:last-child {
+        padding-right: 0;
+        margin-right: 0;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      .icon {
+        span {
+          margin-right: 25px;
+
+          &:before {
+            background-color: $primary-color2;
+            opacity: 0.06;
+            @include equal-size(50px);
+            margin-top: -25px;
+          }
+
+          i {
+            color: $primary-color2;
+            font-size: 42px;
+            padding-left: 23px;
+
+            &.fa-phone-alt {
+              font-size: 38px;
+              padding-left: 28px;
+            }
+          }
+        }
+      }
+
+      .content {
+        span {
+          color: #1f1f1f;
+          font-size: 16px;
+          display: block;
+          line-height: 1;
+          margin-bottom: 5px;
+        }
+
+        .text {
+          font-weight: 700;
+          font-size: 20px;
+          color: #1f1f1f;
+          letter-spacing: 0;
+          margin-bottom: 0;
+
+          a:hover {
+            color: $primary-color2;
+          }
+        }
+      }
+
+
+    }
+
+
+  }
+
+
+
+
+
+}

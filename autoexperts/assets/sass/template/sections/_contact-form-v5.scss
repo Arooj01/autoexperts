@@ -1,0 +1,57 @@
+.contact-form-layout5 {
+  background-color: $secondary-color;
+  
+  .contact-form {
+    padding: 55px 60px 60px 60px;
+    background-color: $white-color;
+  }
+
+  .form-title {
+    text-transform: none;
+  }
+
+  .form-subtitle {
+    font-size: 18px;
+    color: $primary-color;
+    margin-bottom: 25px;
+  }
+
+  .form-group {
+    color: $primary-color;
+  }
+
+  .google-map {
+    height: calc(100% - 30px);
+    width: 100%;
+    min-height: 300px;
+    margin-bottom: 30px;
+  }
+}      
+
+
+@include lg {
+  .contact-form-layout5 {
+    .contact-form {
+      padding: 35px 40px 40px 40px;
+    }
+  }
+}
+
+
+@include xs {
+  .contact-form-layout5 {
+    .contact-form {
+      padding: 5px 10px 10px 10px;
+    }
+
+    .form-title {
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+
+    .form-subtitle {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+  }
+}

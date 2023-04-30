@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} autoexpertworkshop\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://autoexpertworkshop.com/$1 [R,L]
+
+<filesMatch ".(css|js)$">
+ Header set Cache-Control "max-age=31536000, public"
+</filesMatch>

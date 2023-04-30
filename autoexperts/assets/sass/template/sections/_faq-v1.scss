@@ -1,0 +1,116 @@
+// FAQ Layout 1
+.faq-layout1 {
+
+  .faq-banner {
+    margin: 65px 0;
+    height: calc(100% - 130px);
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+
+    &:before {
+      content: '';
+      @include overlay(1, 0);
+      background-color: rgba(2, 6, 16, 0.30);
+    }
+  }
+
+
+  .faq-area {
+    background-color: $primary-color;
+    background-image: url('../img/faq/faq-pattern-1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    min-height: 775px;
+    padding-left: 100px;
+    padding-right: 275px;
+    padding-top: 125px;
+    padding-bottom: 100px;
+    margin-left: -30px;
+
+    .section-title {
+      padding: 0 0;
+      padding-bottom: 38px;
+
+      .title {
+        color: $white-color;
+        margin-bottom: 22px;
+      }
+
+      .sub-title {
+        color: $white-color;
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 0;
+        font-weight: 500;
+      }
+
+    }
+
+    .single-faq {
+      margin-bottom: 18px;
+
+
+      .faq-header {
+        h3.faq-title {
+          position: relative;
+          margin-bottom: 0;
+
+          button {
+            background-color: $white-color;
+            color: $titleColor;
+            border: 1px solid transparent;
+            display: block;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            line-height: 30px;
+            padding: 9px 25px;
+            font-weight: 700;
+            @include border-radius(3px);
+            @include transition(all ease 0.4s);
+
+            &:after {
+              content: '\f068';
+              position: relative;
+              float: right;
+              font-family: $iconFont2;
+              font-weight: 300;
+            }
+
+            &.collapsed {
+              border-color: rgba(255, 255, 255, 0.30);
+              color: $white-color;
+              background-color: transparent;
+
+              &:after {
+                content: '\f067';
+              }
+            }
+
+          }
+        }
+      }
+
+      .faq-body {
+        padding: 27px 25px;
+        padding-bottom: 8px;
+        padding-right: 20px;
+
+        .faq-text {
+          color: $white-color;
+          margin-bottom: 0;
+          font-weight: 400;
+        }
+
+      }
+
+    }
+
+  }
+
+}

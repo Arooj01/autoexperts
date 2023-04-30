@@ -1,0 +1,54 @@
+// Contact Form Layout 2
+.contact-form-layout2 {
+  position: relative;
+
+  .notice {
+    background-color: $primary-color;
+    text-align: center;
+    padding-bottom: 90px;
+    margin-top: 45px;
+    position: relative;
+    z-index: 1;
+
+    .notice-icon {
+      display: inline-block;
+      @include equal-size(90px);
+      background-color: $primary-color;
+      border: 5px solid $white-color;
+      text-align: center;
+      line-height: 83px;
+      color: $white-color;
+      font-size: 44px;
+      position: relative;
+      margin-top: -45px;
+      margin-bottom: 43px;
+      @include border-radius(50%);
+
+      i {
+        animation: cscale 1s infinite alternate;
+      }
+    }
+
+    .notice-text {
+      color: $white-color;
+      margin-bottom: 0;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+
+  }
+
+
+  .shape1 {
+    top: 200px;
+    left: 0;
+  }
+
+  .shape2 {
+    right: 0;
+    bottom: 17%;
+    animation: downUp 10s alternate infinite;
+  }
+
+}

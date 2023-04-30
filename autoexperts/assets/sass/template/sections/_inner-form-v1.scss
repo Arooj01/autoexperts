@@ -1,0 +1,35 @@
+.inner-form-wrap {
+  .form-title {
+    text-align: center;
+    font-weight: 500;
+    font-family: $bodyFont;
+    letter-spacing: 0;
+    font-size: 26px;
+  }
+
+
+  h2.form-title {
+    margin-top: -10px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  form {
+    border: 1px solid #eee;
+    padding: 40px;
+  }
+
+  a {
+    display: inline-block;
+  }
+
+  button {
+    display: block;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto !important;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,171 @@
+// Service Layout 2
+.service-layout2 {
+  background-image: url('../img/service/bg-shape-2-1.png');
+  background-size: 100% 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+
+  .shape-bg {
+    top: -10px;
+    left: 0;
+
+    img {
+      animation: upDown 15s alternate infinite;
+    }
+  }
+
+
+
+  .service-box {
+    padding: 0 0;
+    margin-bottom: 30px;
+
+    .service-img {
+      position: relative;
+      top: 0;
+      left: 0;
+      @include transform(rotateX(0deg));
+      opacity: 1;
+      visibility: visible;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        @include transition(all ease 0.4s);
+        @include transform(scale(1.01));
+      }
+
+      &:before {
+        background-color: #030d23;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all ease 0.4s);
+      }
+
+      .service-icon {
+        margin-bottom: 0;
+        animation: none;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background-color: $primary-color2;
+        font-size: 31px;
+        @include equal-size-lineHeight(60px);
+        box-shadow: none;
+        margin-top: -30px;
+        margin-left: -30px;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(all ease 0.4s);
+        @include transform(scale(1.5));
+
+        i {
+          width: 100%;
+          height: 100%;
+          @include border-radius(50%);
+          color: inherit;
+          background-color: inherit;
+          @include transition(all ease 0.4s);
+          z-index: 1;
+          display: inline-block;
+          line-height: inherit;
+        }
+
+        .ripple {
+          background-color: $primary-color2;
+        }
+      }
+    }
+
+
+    .bottom-icon {
+      bottom: -40px;
+      visibility: visible;
+      opacity: 1;
+      border: 1px solid transparent;
+    }
+
+    .service-content {
+      overflow: hidden;
+      border: 1px solid #f0f0f0;
+      border-top: none;
+      padding: 37px 35px;
+      padding-bottom: 67px;
+      background-color: #fbfbfb;
+
+      .title {
+        &:hover {
+          color: $primary-color2 !important;
+        }
+      }
+    }
+
+
+    &:hover {
+      .service-img {
+        img {
+          @include transform(scale(1.04));
+        }
+
+        .service-icon {
+          opacity: 1;
+          visibility: visible;
+          @include transform(scale(1));
+        }
+
+        &:before {
+          opacity: 0.59;
+          visibility: visible;
+        }
+      }
+
+      .service-content {
+        .title {
+          color: $titleColor;
+        }
+
+        p {
+          color: $bColor;
+        }
+      }
+
+      .bottom-icon {
+        border-color: $primary-color2;
+      }
+
+
+
+    }
+
+
+
+  }
+
+
+
+  .slick-track {
+    >[class^="col-"] {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .slick-arrow {
+    position: absolute;
+    left: -115px;
+    top: 50%;
+    margin-top: -25px;
+
+    &.slick-next {
+      left: auto;
+      right: -115px;
+    }
+  }
+
+
+
+
+}

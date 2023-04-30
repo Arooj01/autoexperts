@@ -1,0 +1,155 @@
+// Our Team Layout 3
+.team-layout3 {
+  position: relative;
+  background-color: #fafafa;
+
+  .team-member {
+    position: relative;
+    margin-bottom: 30px;
+
+    .member-img {
+      width: 100%;
+      padding-left: 60px;
+
+      img {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+      }
+    }
+
+    .member-text {
+      position: absolute;
+      bottom: 60px;
+      width: 100%;
+      max-width: 250px;
+      background-color: $primary-color;
+      padding: 34px 40px;
+      z-index: 3;
+      @include transition(all ease 0.4s);
+
+
+      .name {
+        font-size: 22px;
+        color: $white-color;
+        margin-bottom: 3px;
+
+        &:hover {
+          color: $white-color;
+        }
+
+        a {
+          color: inherit;
+        }
+      }
+
+      span {
+        color: $white-color;
+        font-size: 14px;
+      }
+
+    }
+
+    .btn-overly {
+      position: absolute;
+      bottom: 100px;
+      left: 250px;
+      @include equal-size(45px);
+      line-height: 44px;
+      z-index: 4;
+      background-color: $white-color;
+      color: $primary-color;
+      opacity: 1;
+      visibility: visible;
+      @include transform(translateX(-50%));
+
+
+      .ripple {
+        background-color: #7aa3ff;
+      }
+    }
+
+    ul.social-links {
+      width: 60px;
+      position: absolute;
+      top: 0;
+      bottom: 80px;
+      left: 61px;
+      z-index: 1;
+      background-color: $primary-color;
+      text-align: center;
+      padding-top: 28px;
+      opacity: 0;
+      visibility: hidden;
+      border-top-left-radius: 26px;
+      @include transition(all ease 0.4s);
+
+      li {
+        margin-bottom: 29px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        a {
+          color: $white-color;
+          font-size: 16px;
+          display: inline-block;
+        }
+      }
+    }
+
+
+    &:hover {
+      .social-links {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .member-text {
+        border-top-right-radius: 26px;
+        border-bottom-left-radius: 26px;
+      }
+
+      .btn-overly {
+        left: 200px;
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+  }
+
+
+  .slick-center {
+    .team-member {
+      .social-links {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .member-text {
+        border-top-right-radius: 26px;
+        border-bottom-left-radius: 26px;
+      }
+
+      .btn-overly {
+        left: 200px;
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+
+  .background-image {
+    @include overlay(0.06, 0);
+
+  }
+
+
+
+
+}

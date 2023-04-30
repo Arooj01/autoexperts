@@ -1,0 +1,28 @@
+.pricing-table-wrapper {
+
+  .pricing-table {
+    text-align: center;
+    overflow: hidden;
+
+    h3.title {
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    p.text {
+      color: $bColor2;
+    }
+
+    ul.pricing-list {
+      li {
+        margin-bottom: 10px;
+        color: $bColor2;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+}
